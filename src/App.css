@@ -485,3 +485,15 @@ body, html {
 }
 
 
+
+/* Implementación de Grid para mejor respuesta en secciones */
+.functions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  justify-items: center;
+}
+
