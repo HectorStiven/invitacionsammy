@@ -12,8 +12,8 @@ function App() {
   if (!isOpened) {
     return (
       <div className="entrance-screen">
-        <h1 className="title">Sammy Dakota</h1>
-        <p className="subtitle">XV AÑOS</p>
+        <h1 className="entrance-title">Sammy Dakota</h1>
+        <p className="entrance-subtitle">XV AÑOS</p>
         <p className="welcome-text">Esta invitación es para:</p>
         <h2 className="guest-name">Hector Stiven Vigoya</h2>
         <button onClick={() => setIsOpened(true)} className="open-button">
