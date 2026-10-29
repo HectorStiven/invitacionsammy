@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './App.css'
 import foto1 from './fotos/Marco floral transparente rosa y dorado.png'
 import foto2 from './fotos/Marco dorado barroco simétrico.png'
@@ -6,6 +7,22 @@ import Countdown from './Countdown';
 import { MousePointer2, MapPin, MessageCircle, Gift } from 'lucide-react';
 
 function App() {
+  const [isOpened, setIsOpened] = useState(false);
+
+  if (!isOpened) {
+    return (
+      <div className="entrance-screen">
+        <h1 className="title">Sammy Dakota</h1>
+        <p className="subtitle">XV AÑOS</p>
+        <p className="welcome-text">Esta invitación es para:</p>
+        <h2 className="guest-name">Hector Stiven Vigoya</h2>
+        <button onClick={() => setIsOpened(true)} className="open-button">
+          Abrir Invitación
+        </button>
+      </div>
+    );
+  }
+
   return (
     <div className="app">
       {/* Fondo: imágenes en secuencia */}
